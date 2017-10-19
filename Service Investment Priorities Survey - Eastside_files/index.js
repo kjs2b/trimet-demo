@@ -257,7 +257,7 @@ $(document).ready(function() {
 //**************
 
   // Refresh page when user reaches it via back button
-  $('#refresh').val() === 'yes' ? location.reload() : $('#refresh').val('yes');
+  //$('#refresh').val() === 'yes' ? location.reload() : $('#refresh').val('yes');
 
   updateTotalCost();
   updateUpgradeAttributes();
