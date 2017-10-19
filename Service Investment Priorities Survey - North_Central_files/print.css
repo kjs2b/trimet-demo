@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+body 
+{ 
+    size: auto;   /* auto is the initial value */ 
+    margin-top: 5mm !important;
+    margin-bottom: 10mm !important;
+} 
+* {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.noprint {
+    display: none;
+}
+a:link:after,
+a:visited:after {
+	content: "";
+}
+nav.mast,
+#footer,
+.footer,
+#plannertabs li.normal,
+a.edit,
+nav.l-tools-nav,
+.card-control,
+p.breadcrumb,
+.share-wrap,
+.console
+{
+	display: none;
+}		
+
+img.print-logo {
+    display: block;
+    width: 150px;
+}
+p.print-footer {
+    display: block;
+    color: #000;
+    font-size: 10px;
+}
+.standardheader h1, 
+.standardheader p.breadcrumb, 
+.standardheader .first p, 
+.standardheader .center, 
+.standardheader .inner, 
+.standardheader .first-inner, 
+.standardheader .hero, 
+.standardheader .hero p
+{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both;
+}
+    h1 img.mode-icon {    /* remove icons */
+        display: none;
+    }
+    .standardheader .hero > img {    /* remove hero image */
+        display: none;
+    }
+
+
+.contentcontainer, .standardcontent, .standardcontent-padding, .standardheader, .row, .first, section, .fullwidth  {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    width: auto !important;
+}
+
+h1, h2, h3, h4, h5, h6, p.breadcrumb, p.breadcrumb a, .first p, p {
+	color: #000 !important;
+    width: auto !important;
+    text-shadow: none !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+    .first p {
+        margin-bottom: 10mm !important;
+    }
+
+table td {
+    padding: 10px;
+}
+
+/* old trip planner */
+.content ol.transit a.step-alert img {
+    width: 12px;
+}
+.content ol.transit a.open, .content ol.transit a.close,
+.content ol#plannertabs li.normal {
+    display: none;
+}
+
+/* wordpress */
+article hr,
+.share,
+.sharedaddy,
+.locations-wrap {
+    display: none;
+}
+#primary article {
+    width: 100%;
+    margin: 0 15mm 0 15mm;
+}
+#application {
+    overflow: visible;
+}
+* {
+    backface-visibility: visible;
+}
